@@ -1,7 +1,7 @@
-#### Global Wage 
+#### Global Wages at A Glance
 
 #### Background and Overview
-Global Wage is a visualization app that display global minimum wages on a map. Users can click on a coutnry to view the country's historical minimum wage trend and get wage and labor realted news. 
+Global Wages at A Glance is a visualization app that display global minimum wages on a map. Users can click on a coutnry to view the country's historical minimum wage trend and get wage and labor realted news. 
 
 
 #### Functionality and MVP Features

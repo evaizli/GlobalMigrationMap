@@ -1,0 +1,31 @@
+{
+  "name": "eve",
+  "version": "1.0.0",
+  "description": "#### Background and Overview Global Wages at A Glance is a visualization app that display global minimum wages on a map. Users can click on a coutnry to view the country's historical minimum wage trend and get wage and labor realted news.",
+  "main": "app.js",
+  "dependencies": {
+    "datamap": "^0.0.2",
+    "datamaps": "^0.5.9",
+    "newsapi": "^2.4.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "devDependencies": {
+    "install": "^0.12.2",
+    "npm": "^6.9.0",
+    "webpack": "^4.31.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evaizli/GlobalWage.git"
+  },
+  "author": "eve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evaizli/GlobalWage/issues"
+  },
+  "homepage": "https://github.com/evaizli/GlobalWage#readme"
+}

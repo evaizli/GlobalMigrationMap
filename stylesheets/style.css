@@ -1,9 +1,12 @@
-
+body {
+    height: 100%;
+    background: cadetblue;
+}
 
 .body-content-container{
     display: flex;
     flex-direction: column;
-    background: cadetblue;
+
 }
 .site-title{
     display: flex;
@@ -22,15 +25,31 @@
     position: relative;
     width: 500px; 
     height: 300px;
+    padding-left: 70px;
 
 }
 
-.new-container{
+.news-container{
     display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    align-items: center;
+    position: relative;
+    left: 30%;
+}
+
+.news-box-title{
+    display: flex;
+    font-size: 30px;
+    /* align-self: center; */
 }
 
 .news-headline{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     /* width: 40%; */
+}
+
+ul{
+    text-align: center
 }

@@ -10,14 +10,13 @@ const allNews = newsapi.v2.everything({
    
     }).then(res => {
         const articles = res.articles;
-        // console.log(articles);
-        // debugger
         const ul = document.createElement("ul");
 
         for (let i = 0; i < articles.length; i++) {
-            const article = articles[i];
-            var li = document.createElement('li');
-            li.innerHTML = article.title;
+            const title = articles[i].title;
+            const url = articles[i].url;
+            const li = document.createElement('li');
+            li.innerHTML = "<a href='" + url + "'>'" + title + "'</a>" ;
             ul.appendChild(li);
         }
         document.getElementById("wages_news").appendChild(ul);

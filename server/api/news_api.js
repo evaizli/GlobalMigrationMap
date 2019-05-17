@@ -3,13 +3,14 @@ const newsapi = new NewsAPI('f90c589cb0b84e28b26d4c61173dae45');
 
 
 const allNews = newsapi.v2.everything({
-    sources: 'bbc-news,the-verge',
+    sources: 'abc-news,bbc-news,al-jazeera-english,associated-press, google-news',
     q: 'wage',
     language: 'en',
-    sortBy: 'popularity',
+    // sortBy: 'popularity',
    
     }).then(res => {
         const articles = res.articles;
+        console.log(articles);
         const ul = document.createElement("ul");
 
         for (let i = 0; i < articles.length; i++) {

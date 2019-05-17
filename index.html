@@ -18,8 +18,17 @@
         <div class="content-container">
             <div class="map" id="basic_choropleth"></div>
             <div class="news-container">
-                <h2 class="news-box-title">World Wage News</h2>
-                <div id="wages_news" class="news-headline"></div>
+                <h2 class="news-box-title">News</h2>
+                <label>News Category:</label>
+                <select class="news-category-list" name="news-category" id="category">
+                    <option value="wage">Wage</option>
+                    <option value="labor">Labor</option>
+                    <option value="employment">Employment</option>
+                    <option value="poverty">Poverty</option>
+                </select>
+                <div id="wages_news" class="news-headline">
+                    <ul id="news-ul"></ul>
+                </div>
             </div>
         </div>
     </div>

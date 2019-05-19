@@ -2,35 +2,31 @@ import dataString from "../data/csv.js";
 import csvToJsonFunction from "../data/data";
 
 
-const migrantData = csvToJsonFunction(dataString);
-
-// var countries = Datamap.prototype.worldTopo.objects.world.geometries;
-// for (var i = 0, j = countries.length; i < j; i++) {
-//     console.log(countries[i].properties);
-// }
-
-
 function createMap() {
-    // const migrantData = csvToJsonFunction(dataString);
+    const migrantData = csvToJsonFunction(dataString);
     return new Datamap({
         element: document.getElementById("basic_choropleth"),
-        // projection: 'mercator',
         fills: {
-            defaultFill: "#ABDDA4"
+            EXTREME: "#ff6666",
+            HIGH:"#FFCCCC",
+            MEDIUM:"#ABDDA4",
+            LOW: "#E5FFCC",
+            defaultFill: "#A0A0A0"
         },
         data: migrantData,
         geographyConfig: {
             highlightBorderColor: '#bada55',
             popupTemplate: function (geography, data) {
                 return ['<div class="hoverinfo">', 
-                        geography.properties.name, 
-                        '<br/> 1990: ' + data.M1990, 
-                        '<br/>  1995: ' + data.M1995, 
-                        '<br/>  2000: ' + data.M2000, 
-                        '<br/>  2005: ' + data.M2005, 
-                        '<br/>  2010: ' + data.M2010, 
-                        '<br/>  2015: ' + data.M2015, 
-                        '<br/>  2017: ' + data.M2017,
+                        '<b>' + geography.properties.name, "</b><br/>" +
+                        '<br/><b> Est. Annual Avg:</b> ' + data.avg, " M<br/>" + 
+                        '<br/><b> 1990:</b> ' + (data.M1990/1000000).toFixed(2), " M<br/>" + 
+                        '<br/><b> 1995:</b> ' + (data.M1995 / 1000000).toFixed(2), " M <br/>" + 
+                        '<br/><b>  2000:</b> ' + (data.M2000 / 1000000).toFixed(2), " M <br/>" + 
+                        '<br/><b>  2005:</b> ' + (data.M2005 / 1000000).toFixed(2), " M <br/>" + 
+                        '<br/><b>  2010:</b> ' + (data.M2010 / 1000000).toFixed(2), " M <br/>" + 
+                        '<br/><b>  2015:</b> ' + (data.M2015 / 1000000).toFixed(2), " M<br/>" + 
+                        '<br/><b>  2017:</b> ' + (data.M2017 / 1000000).toFixed(2), " M <br/>" +
                         '</div > '].join('');
             },
             highlightBorderWidth: 3

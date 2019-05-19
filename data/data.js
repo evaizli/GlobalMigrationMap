@@ -19,10 +19,10 @@ export default function csvJSON(csv) {
         result.push(obj);
 
     }
-    let countries = [];
+    let countries = {};
     for (let k = 0; k < result.length; k++){
-        countries[result[k].Country] = result[k];
-        delete result[k]["Country"];
+        countries[result[k].Code] = result[k];
+        delete result[k]["Code"];
     }
     return countries;
 }

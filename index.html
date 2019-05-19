@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara&display=swap" rel="stylesheet">
     <script src="./bundle.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
@@ -14,11 +15,12 @@
 </head>
 <body>
     <div class="body-content-container">
-        <h1 class= "site-title">Global Wages</h1>
+        <h1 class= "site-title">Global Migration Map</h1>
         <div class="content-container">
             <div class="map" id="basic_choropleth"></div>
             <div class="news-container">
                 <h2 class="news-box-title">News</h2>
+                <div class="selection-container">
                 <label>News Category:</label>
                 <select class="news-category-list" name="news-category" id="category">
                     <option value="wage">Wage</option>
@@ -26,6 +28,7 @@
                     <option value="employment">Employment</option>
                     <option value="poverty">Poverty</option>
                 </select>
+                </div>
                 <div id="wages_news" class="news-headline">
                     <ul id="news-ul"></ul>
                 </div>

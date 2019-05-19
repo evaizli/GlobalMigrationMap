@@ -1,23 +1,31 @@
+import dataString from "../data/csv.js";
+import csvToJsonFunction from "../data/data";
+
+
+const migrantData = csvToJsonFunction(dataString);
+// console.log(migrantData);
+
+
+
 function createMap() {
 
     return new Datamap({
         element: document.getElementById("basic_choropleth"),
         projection: 'mercator',
+        geographyConfig: {
+            highlightBorderColor: '#bada55',
+            highlightBorderWidth: 3
+        },
+        
         fills: {
-            defaultFill: "#ABDDA4",
-            authorHasTraveledTo: "#fa0fa0"
+            defaultFill: "#ABDDA4"
         },
         data: {
-            // USA: { fillKey: "authorHasTraveledTo", "population": 133000000 },
-            // JPN: { fillKey: "authorHasTraveledTo" },
-            // ITA: { fillKey: "authorHasTraveledTo" },
-            // CRI: { fillKey: "authorHasTraveledTo" },
-            // KOR: { fillKey: "authorHasTraveledTo" },
-            // DEU: { fillKey: "authorHasTraveledTo" },
-        }
+            migrantData
+        },
     });
 
 }
 
 
-module.exports = createMap;
+export default createMap;

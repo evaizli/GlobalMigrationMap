@@ -1,7 +1,6 @@
 import dataString from "../data/csv.js";
 import csvToJsonFunction from "../data/data";
 
-
 function createMap() {
     const migrantData = csvToJsonFunction(dataString);
     return new Datamap({

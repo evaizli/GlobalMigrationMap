@@ -4,6 +4,7 @@
   "description": "#### Background and Overview Global Wages at A Glance is a visualization app that display global minimum wages on a map. Users can click on a coutnry to view the country's historical minimum wage trend and get wage and labor realted news.",
   "main": "app.js",
   "dependencies": {
+    "d3": "^5.9.2",
     "datamap": "^0.0.2",
     "datamaps": "^0.5.9",
     "newsapi": "^2.4.0",

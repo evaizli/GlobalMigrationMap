@@ -66,6 +66,7 @@ body {
 .selection-container{
     display: flex;
     flex-direction: row;
+    padding-bottom: 5px;
 }
 
 .category-label{
@@ -76,12 +77,11 @@ body {
     display: flex;
     height: auto;
     height: 80%;
+    padding-bottom: 5px;
 }
 .news-ul{
     height: 100%;
-    padding-top: 7px;
     overflow: auto;
-
 }
 
 li{
@@ -127,4 +127,21 @@ li{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #093145; 
+}
+
+@media (max-width: 1000px){
+    .news-box-title{
+        padding-top: 5px;
+    }
+    .news-container{
+        padding-left: 0;
+    }
+    .content-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .map{
+        width: 80%;
+        height: 80%;
+    }
 }

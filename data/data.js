@@ -36,7 +36,6 @@ export default function csvJSON(csv) {
             color = "EXTREME";
         }
         result[k]["fillKey"] = color;
-        console.log(result)
     }
     return countries;
 }

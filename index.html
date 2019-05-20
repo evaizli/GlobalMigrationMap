@@ -11,6 +11,7 @@
     <script src="node_modules/datamaps/dist/datamaps.world.min.js"></script>
     <link rel="stylesheet" href="./stylesheets/reset.css">
     <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Global Wage Map</title>
 </head>
 <body>
@@ -20,21 +21,34 @@
         <div class="content-container">
             <div class="map" id="basic_choropleth"></div>
             <div class="news-container">
-                <h2 class="news-box-title">News</h2>
+                <h2 class="news-box-title">Related News</h2>
                 <div class="selection-container">
-                <label>News Category:</label>
-                <select class="news-category-list" name="news-category" id="category">
-                    <option value="wage">Wage</option>
-                    <option value="labor">Labor</option>
-                    <option value="employment">Employment</option>
-                    <option value="poverty">Poverty</option>
-                </select>
+                    <label class="category-label">News Category:</label>
+                    <select class="news-category-list" name="news-category" id="category">
+                        <option value="wage">Wage</option>
+                        <option value="labor">Labor</option>
+                        <option value="employment">Employment</option>
+                        <option value="poverty">Poverty</option>
+                    </select>
                 </div>
                 <div id="wages_news" class="news-headline">
-                    <ul id="news-ul"></ul>
+                    <ul class="news-ul" id="news-ul"></ul>
                 </div>
             </div>
         </div>
+        <footer class="splash-page-footer">
+            <ul class="link-ul">
+                <li class="link-li">
+                    <i class="github-logo fab fa-github-alt"></i>
+                    <a class="profile-links" href="https://github.com/evaizli" target="_blank">Github</a>
+                </li>
+                <li>
+                    <i class="linkedIn-logo fab fa-linkedin"></i>
+                    <a class="profile-links" href="https://linkedin.com/in/evapan2000" target="_blank">LinkedIn</a>
+                </li>
+            </ul>
+            <h2 class="copy-right">© Copyright 2019. All rights reserved.</h2>
+        </footer>
     </div>
 </body>
 </html>

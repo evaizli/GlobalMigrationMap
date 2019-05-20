@@ -8,6 +8,7 @@
     "datamap": "^0.0.2",
     "datamaps": "^0.5.9",
     "newsapi": "^2.4.0",
+    "topojson": "^3.0.2",
     "webpack-cli": "^3.3.2"
   },
   "devDependencies": {

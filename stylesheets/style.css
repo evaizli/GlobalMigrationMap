@@ -42,7 +42,7 @@ body {
     flex-direction: row;
     position: relative;
     width: 794px;
-    height: 600px;
+    height: 500px;
 }
 
 .news-container{
@@ -97,8 +97,18 @@ li{
     background: #093145;
 }
 .link-ul{
-    padding-top: 15px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
 }
+.github-logo{
+    font-size: 25px;
+}
+.linkedIn-logo{
+    padding-left: 25px;
+    font-size: 25px;
+}
+
 .profile-links{
     color: white;
     text-decoration: none;
@@ -130,6 +140,14 @@ li{
 }
 
 @media (max-width: 1000px){
+    .site-title{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .sub-title{
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
     .news-box-title{
         padding-top: 5px;
     }
@@ -140,8 +158,11 @@ li{
         display: flex;
         flex-direction: column;
     }
+    li{
+        line-height: 1.5;
+    }
     .map{
         width: 80%;
-        height: 80%;
+        height: 60%;
     }
 }

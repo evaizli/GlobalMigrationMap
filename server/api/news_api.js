@@ -1,7 +1,7 @@
 const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI('f90c589cb0b84e28b26d4c61173dae45');
 
-const selectNews = (newsCategory ) =>{
+const selectNews = (newsCategory) =>{
   
     return newsapi.v2.everything({
         sources: 'abc-news,bbc-news,al-jazeera-english,google-news,the-new-york-times,the-verge,time,usa-today,the-washington-post',

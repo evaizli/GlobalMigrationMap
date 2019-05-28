@@ -3,7 +3,6 @@ body {
     height: 100%;
     background: #107896;
     font-family: 'Hind Vadodara', sans-serif;
-    /* height: 100vh;   */
 }
 
 .body-content-container{
@@ -114,7 +113,7 @@ li{
     text-decoration: none;
 }
 .copy-right{
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 /* width */
@@ -137,6 +136,10 @@ li{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #093145; 
+}
+a{
+    font-size: 15px;
+
 }
 
 @media (max-width: 1000px){
@@ -165,4 +168,27 @@ li{
         width: 80%;
         height: 60%;
     }
+
+    .link-ul{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    }
+    .github-logo{
+        font-size: 20px;
+    }
+    .linkedIn-logo{
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .copy-right{
+        padding-bottom: 15px;
+        font-size: 13px;
+    }
+    a{
+        font-size: 13px;
+    }
+
+
 }

@@ -153,6 +153,7 @@ a{
     }
     .news-box-title{
         padding-top: 5px;
+        font-size: 20px;
     }
     .news-container{
         padding-left: 0;
@@ -164,11 +165,7 @@ a{
     li{
         line-height: 1.5;
     }
-    .map{
-        width: 80%;
-        height: 60%;
-    }
-
+  
     .link-ul{
     padding-top: 5px;
     display: flex;

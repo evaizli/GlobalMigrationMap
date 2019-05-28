@@ -11,3 +11,6 @@ This project will be implemented with the following technologies:
 * Vanilla JavaScript for overall structure and visualization 
 * News API to fetch news articles related to migration
 * Datamaps plugin to display global map
+
+#### Preview
+![](doc/final_project_demo.png)

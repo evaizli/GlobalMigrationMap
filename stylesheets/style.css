@@ -143,6 +143,9 @@ a{
 }
 
 @media (max-width: 1000px){
+    .body-content-container{
+        height: auto;
+    }
     .site-title{
         font-size: 30px;
         padding: 10px;
@@ -178,7 +181,6 @@ a{
         padding-left: 20px;
         font-size: 20px;
     }
-
     .copy-right{
         padding-bottom: 15px;
         font-size: 13px;
@@ -186,6 +188,5 @@ a{
     a{
         font-size: 13px;
     }
-
 
 }

@@ -3,8 +3,9 @@ import csvToJsonFunction from "../data/data";
 
 function createMap() {
     const migrantData = csvToJsonFunction(dataString);
-    return new Datamap({
+    let map =  new Datamap({
         element: document.getElementById("basic_choropleth"),
+        responsive: true,
         fills: {
             EXTREME: "#ff6666",
             HIGH:"#FFCCCC",
@@ -28,10 +29,13 @@ function createMap() {
                         '<br/><b>  2017:</b> ' + (data.M2017 / 1000000).toFixed(2), " M <br/>" +
                         '</div > '].join('');
             },
-            highlightBorderWidth: 3
+            highlightBorderWidth: 3,
         },
     });
-    
+    window.addEventListener("resize", () =>{
+        console.log(map);
+        map.resize();
+    });
 }
 
 

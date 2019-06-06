@@ -33,7 +33,7 @@ function createMap() {
         },
     });
     window.addEventListener("resize", () =>{
-        console.log(map);
+        // console.log(map);
         map.resize();
     });
 }

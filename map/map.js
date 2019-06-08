@@ -3,9 +3,14 @@ import csvToJsonFunction from "../data/data";
 
 function createMap() {
     const migrantData = csvToJsonFunction(dataString);
+    const offsetHeight = document.getElementById("basic_choropleth").offsetHeight;
+    const offsetWidth = document.getElementById("basic_choropleth").offsetWidth;
+    // debugger
     let map =  new Datamap({
         element: document.getElementById("basic_choropleth"),
         responsive: true,
+        height: offsetHeight,
+        width: offsetWidth*(.58),
         fills: {
             EXTREME: "#ff6666",
             HIGH:"#FFCCCC",

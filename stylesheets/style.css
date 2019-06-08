@@ -44,11 +44,13 @@ body {
 }
 
 .map{
-    display: flex;
+    display: block;
     flex-direction: row;
-    position: relative;
+    position: absolute;
+    left: 0px;
     width: 794px;
     height: 500px;
+    padding-bottom: 0px !important;
 }
 
 .news-container{

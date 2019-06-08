@@ -38,7 +38,6 @@ function createMap() {
         },
     });
     window.addEventListener("resize", () =>{
-        // console.log(map);
         map.resize();
     });
 }

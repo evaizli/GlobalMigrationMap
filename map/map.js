@@ -10,7 +10,7 @@ function createMap() {
         element: document.getElementById("basic_choropleth"),
         responsive: true,
         height: offsetHeight,
-        width: offsetWidth*(.95),
+        width: offsetWidth*(.90),
         fills: {
             EXTREME: "#ff6666",
             HIGH:"#FFCCCC",

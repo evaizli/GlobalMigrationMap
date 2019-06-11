@@ -5,13 +5,13 @@ import selectNews from "./server/api/news_api";
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    createMap();
-
+    
     selectNews("wage");
     let selectCategory = document.getElementById("category");
     selectCategory.addEventListener("change", (event) => {
         selectNews(event.target.value);
     });
+    createMap();
 
 });
 

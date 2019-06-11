@@ -155,8 +155,10 @@ a{
 @media (max-width: 1000px){
     .body-content-container{
         height: auto;
+        text-align: center;
     }
     .site-title{
+        text-align: center;
         font-size: 30px;
         padding: 10px;
     }
@@ -165,8 +167,12 @@ a{
         padding-bottom: 10px;
     }
     .news-box-title{
+        display: block;
         padding-top: 5px;
         font-size: 20px;
+    }
+    .news-flex-container {
+        justify-content: center !important;
     }
     .news-container{
         padding-left: 0;

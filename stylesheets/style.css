@@ -188,6 +188,9 @@ a{
         width: 100%;
         height: 450px;
     }
+    .datamap {
+        left: 15px;
+    }
     li{
         line-height: 1.5;
     }

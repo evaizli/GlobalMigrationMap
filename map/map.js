@@ -3,8 +3,13 @@ import csvToJsonFunction from "../data/data";
 
 function createMap() {
     const migrantData = csvToJsonFunction(dataString);
+    const width = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
     let offsetHeight = document.getElementById("basic_choropleth").offsetHeight;
-    offsetHeight = offsetHeight < 450 ? 500 : offsetHeight;
+    if (width > 1000){
+        offsetHeight = offsetHeight < 450 ? 500 : offsetHeight;
+    }
     let offsetWidth = document.getElementById("basic_choropleth").offsetWidth;
     offsetWidth = offsetWidth > 720 ? 720 : offsetWidth;
     // debugger;  

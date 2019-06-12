@@ -8,6 +8,7 @@ body {
 .body-content-container{
     display: flex;
     flex-direction: column;
+    width: 98%;
     height: 100vh;  
 }
 .nav-bar-top{
